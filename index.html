@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bugambilash | Spa de Cejas y Pestañas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="fade-in">
+    <img src="images/logo.png" alt="Bugambilash Logo" class="logo" />
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#sobre">Sobre Nosotras</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero fade-in">
+    <h1>Realza tu mirada con elegancia y confianza</h1>
+    <a href="https://wa.me/3151177535" class="btn">Agenda tu cita</a>
+  </section>
+
+  <section id="servicios" class="fade-in">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios">
+      <div class="card">Extensiones de pestañas</div>
+      <div class="card">Lifting de pestañas</div>
+      <div class="card">Diseño y laminado de cejas</div>
+    </div>
+  </section>
+
+  <section id="galeria" class="fade-in">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <div class="foto espacio">Espacio para foto 1</div>
+      <div class="foto espacio">Espacio para foto 2</div>
+      <div class="foto espacio">Espacio para foto 3</div>
+      <div class="foto espacio">Espacio para foto 4</div>
+      <div class="foto espacio">Espacio para foto 5</div>
+      <div class="foto espacio">Espacio para foto 6</div>
+    </div>
+  </section>
+
+  <section id="sobre" class="fade-in">
+    <h2>Sobre Bugambilash</h2>
+    <p>En Bugambilash transformamos tu mirada con técnicas profesionales en cejas y pestañas, cuidando cada detalle con amor y dedicación. Nuestro spa está diseñado para ofrecerte una experiencia relajante, elegante y personalizada.</p>
+  </section>
+
+  <footer id="contacto" class="fade-in">
+    <p>© 2025 Bugambilash | Creado con amor por Laura Mejía 💖</p>
+  </footer>
+
+  <a href="https://wa.me/3151177535" class="whatsapp-btn">💬</a>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
